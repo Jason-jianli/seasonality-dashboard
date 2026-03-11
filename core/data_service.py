@@ -29,6 +29,26 @@ class SeasonalityDataService:
         self.market_data = MarketDataClient()
         self.local_bond_data = LocalBondDataClient()
 
+    def _resolve_local_data_path(self, raw_path: str | Path) -> Path:
+        path = Path(str(raw_path))
+        if path.exists():
+            return path
+
+        if not path.is_absolute():
+            candidate = (self.root / path).resolve()
+            if candidate.exists():
+                return candidate
+
+        parts = path.parts
+        marker = ("data", "investpy_bond_yields")
+        for index in range(len(parts) - len(marker) + 1):
+            if tuple(parts[index:index + len(marker)]) == marker:
+                candidate = self.root.joinpath(*marker, *parts[index + len(marker):]).resolve()
+                if candidate.exists():
+                    return candidate
+
+        return path if path.is_absolute() else (self.root / path).resolve()
+
     @property
     def settings(self) -> dict[str, Any]:
         return self.config.settings
@@ -102,7 +122,15 @@ class SeasonalityDataService:
             catalog = catalog.copy()
 
         if "history_path" in catalog.columns:
+            catalog["history_path"] = catalog["history_path"].map(
+                lambda value: str(self._resolve_local_data_path(value))
+            )
             catalog = catalog[catalog["history_path"].map(lambda value: Path(str(value)).exists())].copy()
+
+        if "request_log_path" in catalog.columns:
+            catalog["request_log_path"] = catalog["request_log_path"].map(
+                lambda value: str(self._resolve_local_data_path(value))
+            )
 
         if catalog.empty:
             return catalog
