@@ -1,0 +1,221 @@
+country,bond_name
+australia,Australia 10Y
+australia,Australia 12Y
+australia,Australia 15Y
+australia,Australia 1Y
+australia,Australia 20Y
+australia,Australia 2Y
+australia,Australia 30Y
+australia,Australia 3Y
+australia,Australia 4Y
+australia,Australia 5Y
+australia,Australia 6Y
+australia,Australia 7Y
+australia,Australia 8Y
+australia,Australia 9Y
+canada,Canada 10Y
+canada,Canada 1M
+canada,Canada 1Y
+canada,Canada 20Y
+canada,Canada 2M
+canada,Canada 2Y
+canada,Canada 30Y
+canada,Canada 3M
+canada,Canada 3Y
+canada,Canada 4Y
+canada,Canada 5Y
+canada,Canada 6M
+canada,Canada 7Y
+china,China 10Y
+china,China 15Y
+china,China 1Y
+china,China 20Y
+china,China 2Y
+china,China 30Y
+china,China 3Y
+china,China 5Y
+china,China 7Y
+germany,Germany 10Y
+germany,Germany 15Y
+germany,Germany 1Y
+germany,Germany 20Y
+germany,Germany 25Y
+germany,Germany 2Y
+germany,Germany 30Y
+germany,Germany 3M
+germany,Germany 3Y
+germany,Germany 4Y
+germany,Germany 5Y
+germany,Germany 6M
+germany,Germany 6Y
+germany,Germany 7Y
+germany,Germany 8Y
+germany,Germany 9M
+germany,Germany 9Y
+india,India 10Y
+india,India 11Y
+india,India 12Y
+india,India 13Y
+india,India 14Y
+india,India 15Y
+india,India 19Y
+india,India 1Y
+india,India 24Y
+india,India 2Y
+india,India 30Y
+india,India 3M
+india,India 3Y
+india,India 4Y
+india,India 5Y
+india,India 6M
+india,India 6Y
+india,India 7Y
+india,India 8Y
+india,India 9Y
+indonesia,Indonesia 10Y
+indonesia,Indonesia 15Y
+indonesia,Indonesia 1M
+indonesia,Indonesia 1Y
+indonesia,Indonesia 20Y
+indonesia,Indonesia 25Y
+indonesia,Indonesia 30Y
+indonesia,Indonesia 3M
+indonesia,Indonesia 3Y
+indonesia,Indonesia 5Y
+indonesia,Indonesia 6M
+japan,Japan 10Y
+japan,Japan 15Y
+japan,Japan 1M
+japan,Japan 1Y
+japan,Japan 20Y
+japan,Japan 2Y
+japan,Japan 30Y
+japan,Japan 3M
+japan,Japan 3Y
+japan,Japan 40Y
+japan,Japan 4Y
+japan,Japan 5Y
+japan,Japan 6M
+japan,Japan 6Y
+japan,Japan 7Y
+japan,Japan 8Y
+japan,Japan 9M
+japan,Japan 9Y
+malaysia,Malaysia 10Y
+malaysia,Malaysia 15Y
+malaysia,Malaysia 1Y
+malaysia,Malaysia 20Y
+malaysia,Malaysia 30Y
+malaysia,Malaysia 3M
+malaysia,Malaysia 3W
+malaysia,Malaysia 3Y
+malaysia,Malaysia 5Y
+malaysia,Malaysia 7M
+malaysia,Malaysia 7Y
+new zealand,New Zealand 10Y
+new zealand,New Zealand 15Y
+new zealand,New Zealand 1M
+new zealand,New Zealand 1Y
+new zealand,New Zealand 20Y
+new zealand,New Zealand 2M
+new zealand,New Zealand 2Y
+new zealand,New Zealand 3M
+new zealand,New Zealand 4M
+new zealand,New Zealand 5M
+new zealand,New Zealand 5Y
+new zealand,New Zealand 6M
+new zealand,New Zealand 7Y
+norway,Norway 10Y
+norway,Norway 1Y
+norway,Norway 2Y
+norway,Norway 3M
+norway,Norway 5Y
+norway,Norway 6M
+norway,Norway 9M
+philippines,Philippines 10Y
+philippines,Philippines 1M
+philippines,Philippines 1Y
+philippines,Philippines 20Y
+philippines,Philippines 25Y
+philippines,Philippines 2Y
+philippines,Philippines 3M
+philippines,Philippines 3Y
+philippines,Philippines 4Y
+philippines,Philippines 5Y
+philippines,Philippines 6M
+philippines,Philippines 7Y
+south korea,South Korea 10Y
+south korea,South Korea 1Y
+south korea,South Korea 20Y
+south korea,South Korea 2Y
+south korea,South Korea 30Y
+south korea,South Korea 3Y
+south korea,South Korea 4Y
+south korea,South Korea 50Y
+south korea,South Korea 5Y
+switzerland,Switzerland 10Y
+switzerland,Switzerland 15Y
+switzerland,Switzerland 1M
+switzerland,Switzerland 1W
+switzerland,Switzerland 1Y
+switzerland,Switzerland 20Y
+switzerland,Switzerland 2M
+switzerland,Switzerland 2Y
+switzerland,Switzerland 30Y
+switzerland,Switzerland 3M
+switzerland,Switzerland 3Y
+switzerland,Switzerland 4Y
+switzerland,Switzerland 50Y
+switzerland,Switzerland 5Y
+switzerland,Switzerland 6M
+switzerland,Switzerland 6Y
+switzerland,Switzerland 7Y
+switzerland,Switzerland 8Y
+switzerland,Switzerland 9Y
+switzerland,Switzerland Overnight
+taiwan,Taiwan 10Y
+taiwan,Taiwan 20Y
+taiwan,Taiwan 2Y
+taiwan,Taiwan 30Y
+taiwan,Taiwan 5Y
+thailand,Thailand 10Y
+thailand,Thailand 12Y
+thailand,Thailand 14Y
+thailand,Thailand 15Y
+thailand,Thailand 16Y
+thailand,Thailand 1Y
+thailand,Thailand 20Y
+thailand,Thailand 2Y
+thailand,Thailand 3Y
+thailand,Thailand 5Y
+thailand,Thailand 7Y
+united kingdom,U.K. 10Y
+united kingdom,U.K. 12Y
+united kingdom,U.K. 15Y
+united kingdom,U.K. 1M
+united kingdom,U.K. 1Y
+united kingdom,U.K. 20Y
+united kingdom,U.K. 25Y
+united kingdom,U.K. 2Y
+united kingdom,U.K. 30Y
+united kingdom,U.K. 3M
+united kingdom,U.K. 3Y
+united kingdom,U.K. 40Y
+united kingdom,U.K. 4Y
+united kingdom,U.K. 50Y
+united kingdom,U.K. 5Y
+united kingdom,U.K. 6M
+united kingdom,U.K. 6Y
+united kingdom,U.K. 7Y
+united kingdom,U.K. 8Y
+united kingdom,U.K. 9Y
+united states,U.S. 10Y
+united states,U.S. 1M
+united states,U.S. 1Y
+united states,U.S. 2Y
+united states,U.S. 30Y
+united states,U.S. 3M
+united states,U.S. 3Y
+united states,U.S. 5Y
+united states,U.S. 6M
+united states,U.S. 7Y

@@ -1,0 +1,72 @@
+groups:
+  fx:
+    - name: "USDJPY"
+      ticker: "USDJPY=X"
+      price_col: "Close"
+
+    - name: "USDKRW"
+      ticker: "USDKRW=X"
+      price_col: "Close"
+
+    - name: "EURUSD"
+      ticker: "EURUSD=X"
+      price_col: "Close"
+
+  equity:
+    - name: "S&P 500"
+      ticker: "^GSPC"
+      price_col: "Close"
+
+    - name: "SPY"
+      ticker: "SPY"
+      price_col: "Close"
+
+    - name: "QQQ"
+      ticker: "QQQ"
+      price_col: "Close"
+
+    - name: "Apple"
+      ticker: "AAPL"
+      price_col: "Close"
+
+  rates:
+    - name: "US 10Y Yield"
+      ticker: "^TNX"
+      price_col: "Close"
+
+    - name: "US 13W Yield"
+      ticker: "^IRX"
+      price_col: "Close"
+
+    - name: "US 5Y Yield"
+      ticker: "^FVX"
+      price_col: "Close"
+
+    - name: "US 30Y Yield"
+      ticker: "^TYX"
+      price_col: "Close"
+
+  commodities:
+    - name: "Gold"
+      ticker: "GC=F"
+      price_col: "Close"
+
+    - name: "WTI Crude"
+      ticker: "CL=F"
+      price_col: "Close"
+
+settings:
+  default_start_date: "2000-01-01"
+  sample_event_dates:
+    - "2022-03-16"
+    - "2022-06-15"
+    - "2022-09-21"
+    - "2022-12-14"
+    - "2023-03-22"
+    - "2023-06-14"
+    - "2023-09-20"
+    - "2023-12-13"
+    - "2024-03-20"
+    - "2024-06-12"
+    - "2024-09-18"
+    - "2024-12-18"

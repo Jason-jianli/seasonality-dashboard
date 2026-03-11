@@ -1,0 +1,28 @@
+country,bond_name,year,status,rows,from_date,to_date,error
+indonesia,Indonesia 20Y,2000,failed,0,01/01/2000,31/12/2000,"Failed to download Indonesia 20Y from 01/01/2000 to 31/12/2000 after 60 attempts: ERR#0015: error 403, try again later."
+indonesia,Indonesia 20Y,2001,failed,0,01/01/2001,31/12/2001,"Failed to download Indonesia 20Y from 01/01/2001 to 31/12/2001 after 60 attempts: ERR#0015: error 403, try again later."
+indonesia,Indonesia 20Y,2002,failed,0,01/01/2002,31/12/2002,"Failed to download Indonesia 20Y from 01/01/2002 to 31/12/2002 after 60 attempts: ERR#0015: error 403, try again later."
+indonesia,Indonesia 20Y,2003,failed,0,01/01/2003,31/12/2003,"Failed to download Indonesia 20Y from 01/01/2003 to 31/12/2003 after 60 attempts: ERR#0015: error 403, try again later."
+indonesia,Indonesia 20Y,2004,failed,0,01/01/2004,31/12/2004,"Failed to download Indonesia 20Y from 01/01/2004 to 31/12/2004 after 60 attempts: ERR#0015: error 403, try again later."
+indonesia,Indonesia 20Y,2005,failed,0,01/01/2005,31/12/2005,"Failed to download Indonesia 20Y from 01/01/2005 to 31/12/2005 after 60 attempts: ERR#0015: error 403, try again later."
+indonesia,Indonesia 20Y,2006,ok,85,01/01/2006,31/12/2006,
+indonesia,Indonesia 20Y,2007,ok,181,01/01/2007,31/12/2007,
+indonesia,Indonesia 20Y,2008,ok,241,01/01/2008,31/12/2008,
+indonesia,Indonesia 20Y,2009,failed,0,01/01/2009,31/12/2009,"Failed to download Indonesia 20Y from 01/01/2009 to 31/12/2009 after 60 attempts: ERR#0015: error 403, try again later."
+indonesia,Indonesia 20Y,2010,ok,225,01/01/2010,31/12/2010,
+indonesia,Indonesia 20Y,2011,ok,243,01/01/2011,31/12/2011,
+indonesia,Indonesia 20Y,2012,ok,254,01/01/2012,31/12/2012,
+indonesia,Indonesia 20Y,2013,ok,265,01/01/2013,31/12/2013,
+indonesia,Indonesia 20Y,2014,ok,262,01/01/2014,31/12/2014,
+indonesia,Indonesia 20Y,2015,ok,262,01/01/2015,31/12/2015,
+indonesia,Indonesia 20Y,2016,ok,258,01/01/2016,31/12/2016,
+indonesia,Indonesia 20Y,2017,ok,258,01/01/2017,31/12/2017,
+indonesia,Indonesia 20Y,2018,ok,248,01/01/2018,31/12/2018,
+indonesia,Indonesia 20Y,2019,ok,249,01/01/2019,31/12/2019,
+indonesia,Indonesia 20Y,2020,ok,243,01/01/2020,31/12/2020,
+indonesia,Indonesia 20Y,2021,ok,250,01/01/2021,31/12/2021,
+indonesia,Indonesia 20Y,2022,ok,246,01/01/2022,31/12/2022,
+indonesia,Indonesia 20Y,2023,ok,249,01/01/2023,31/12/2023,
+indonesia,Indonesia 20Y,2024,ok,239,01/01/2024,31/12/2024,
+indonesia,Indonesia 20Y,2025,ok,237,01/01/2025,31/12/2025,
+indonesia,Indonesia 20Y,2026,ok,45,01/01/2026,10/03/2026,

@@ -1,0 +1,28 @@
+country,bond_name,year,status,rows,from_date,to_date,error
+indonesia,Indonesia 6M,2000,failed,0,01/01/2000,31/12/2000,Failed to download Indonesia 6M from 01/01/2000 to 31/12/2000 after 60 attempts: ERR#0069: bond information unavailable or not found.
+indonesia,Indonesia 6M,2001,failed,0,01/01/2001,31/12/2001,Failed to download Indonesia 6M from 01/01/2001 to 31/12/2001 after 60 attempts: ERR#0069: bond information unavailable or not found.
+indonesia,Indonesia 6M,2002,failed,0,01/01/2002,31/12/2002,Failed to download Indonesia 6M from 01/01/2002 to 31/12/2002 after 60 attempts: ERR#0069: bond information unavailable or not found.
+indonesia,Indonesia 6M,2003,failed,0,01/01/2003,31/12/2003,Failed to download Indonesia 6M from 01/01/2003 to 31/12/2003 after 60 attempts: ERR#0069: bond information unavailable or not found.
+indonesia,Indonesia 6M,2004,failed,0,01/01/2004,31/12/2004,Failed to download Indonesia 6M from 01/01/2004 to 31/12/2004 after 60 attempts: ERR#0069: bond information unavailable or not found.
+indonesia,Indonesia 6M,2005,failed,0,01/01/2005,31/12/2005,Failed to download Indonesia 6M from 01/01/2005 to 31/12/2005 after 60 attempts: ERR#0069: bond information unavailable or not found.
+indonesia,Indonesia 6M,2006,failed,0,01/01/2006,31/12/2006,Failed to download Indonesia 6M from 01/01/2006 to 31/12/2006 after 60 attempts: ERR#0069: bond information unavailable or not found.
+indonesia,Indonesia 6M,2007,failed,0,01/01/2007,31/12/2007,Failed to download Indonesia 6M from 01/01/2007 to 31/12/2007 after 60 attempts: ERR#0069: bond information unavailable or not found.
+indonesia,Indonesia 6M,2008,failed,0,01/01/2008,31/12/2008,Failed to download Indonesia 6M from 01/01/2008 to 31/12/2008 after 60 attempts: ERR#0069: bond information unavailable or not found.
+indonesia,Indonesia 6M,2009,ok,90,01/01/2009,31/12/2009,
+indonesia,Indonesia 6M,2010,failed,0,01/01/2010,31/12/2010,Failed to download Indonesia 6M from 01/01/2010 to 31/12/2010 after 60 attempts: ERR#0069: bond information unavailable or not found.
+indonesia,Indonesia 6M,2011,failed,0,01/01/2011,31/12/2011,Failed to download Indonesia 6M from 01/01/2011 to 31/12/2011 after 60 attempts: ERR#0069: bond information unavailable or not found.
+indonesia,Indonesia 6M,2012,ok,244,01/01/2012,31/12/2012,
+indonesia,Indonesia 6M,2013,ok,305,01/01/2013,31/12/2013,
+indonesia,Indonesia 6M,2014,ok,268,01/01/2014,31/12/2014,
+indonesia,Indonesia 6M,2015,ok,260,01/01/2015,31/12/2015,
+indonesia,Indonesia 6M,2016,ok,257,01/01/2016,31/12/2016,
+indonesia,Indonesia 6M,2017,ok,263,01/01/2017,31/12/2017,
+indonesia,Indonesia 6M,2018,ok,254,01/01/2018,31/12/2018,
+indonesia,Indonesia 6M,2019,ok,252,01/01/2019,31/12/2019,
+indonesia,Indonesia 6M,2020,ok,246,01/01/2020,31/12/2020,
+indonesia,Indonesia 6M,2021,ok,237,01/01/2021,31/12/2021,
+indonesia,Indonesia 6M,2022,ok,234,01/01/2022,31/12/2022,
+indonesia,Indonesia 6M,2023,ok,253,01/01/2023,31/12/2023,
+indonesia,Indonesia 6M,2024,ok,241,01/01/2024,31/12/2024,
+indonesia,Indonesia 6M,2025,ok,236,01/01/2025,31/12/2025,
+indonesia,Indonesia 6M,2026,ok,45,01/01/2026,10/03/2026,
