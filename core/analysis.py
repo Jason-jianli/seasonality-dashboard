@@ -223,6 +223,540 @@ def prepare_price_series(raw_data: pd.DataFrame, price_col: str = "Close") -> pd
     return price_series
 
 
+def build_latest_snapshot_table(
+    raw_data: pd.DataFrame,
+    structure_label: str = "Asset",
+    price_col: str = "Close",
+    move_scale: Optional[float] = None,
+    one_month_window: int = 21,
+    three_month_window: int = 63,
+    move_window: int = 62,
+    history_window: int = 252,
+) -> pd.DataFrame:
+    """Build a one-row rolling statistics snapshot table for the latest observation."""
+    price_series = prepare_price_series(raw_data=raw_data, price_col=price_col)
+    latest_timestamp = pd.Timestamp(price_series.index[-1])
+
+    latest_level = float(price_series.iloc[-1])
+
+    one_month_slice = price_series.tail(min(one_month_window, len(price_series)))
+    three_month_slice = price_series.tail(min(three_month_window, len(price_series)))
+
+    one_month_avg = float(one_month_slice.mean()) if not one_month_slice.empty else np.nan
+    three_month_avg = float(three_month_slice.mean()) if not three_month_slice.empty else np.nan
+    three_month_high = float(three_month_slice.max()) if not three_month_slice.empty else np.nan
+    three_month_low = float(three_month_slice.min()) if not three_month_slice.empty else np.nan
+
+    if pd.notna(three_month_high) and pd.notna(three_month_low) and three_month_high != three_month_low:
+        three_month_pct = ((latest_level - three_month_low) / (three_month_high - three_month_low)) * 100.0
+    else:
+        three_month_pct = np.nan
+
+    difference_scale = 1.0 if move_scale is None else float(move_scale)
+    change_vs_one_month_avg = (latest_level - one_month_avg) * difference_scale if pd.notna(one_month_avg) else np.nan
+
+    daily_changes = price_series.diff().dropna()
+    three_month_daily_changes = daily_changes.tail(min(three_month_window, len(daily_changes)))
+    avg_three_month_daily_change = (
+        float(three_month_daily_changes.mean()) * difference_scale
+        if not three_month_daily_changes.empty
+        else np.nan
+    )
+    three_month_sigma = (
+        float(three_month_daily_changes.std()) * difference_scale
+        if not three_month_daily_changes.empty
+        else np.nan
+    )
+
+    latest_move = (
+        float(price_series.iloc[-1] - price_series.iloc[-(move_window + 1)]) * difference_scale
+        if len(price_series) > move_window
+        else np.nan
+    )
+
+    rolling_moves = price_series.diff(periods=move_window).dropna() * difference_scale
+    rolling_moves_window = rolling_moves.tail(min(history_window, len(rolling_moves)))
+
+    avg_move = float(rolling_moves_window.mean()) if not rolling_moves_window.empty else np.nan
+    sigma_move = float(rolling_moves_window.std()) if not rolling_moves_window.empty else np.nan
+    worst_move = float(rolling_moves_window.min()) if not rolling_moves_window.empty else np.nan
+    best_move = float(rolling_moves_window.max()) if not rolling_moves_window.empty else np.nan
+
+    snapshot_table = pd.DataFrame(
+        [
+            {
+                "Structure": structure_label,
+                "Level": latest_level,
+                "Chg vs 1M Avg": change_vs_one_month_avg,
+                "1M Avg": one_month_avg,
+                "3M Avg": three_month_avg,
+                "3M High": three_month_high,
+                "3M Low": three_month_low,
+                "3M Pct (%)": three_month_pct,
+                "Avg 3M Daily Chg": avg_three_month_daily_change,
+                "3M Sigma": three_month_sigma,
+                "Latest 62d Move": latest_move,
+                "Avg 62d Move (252d)": avg_move,
+                "1 Sigma 62d (252d)": sigma_move,
+                "Worst 62d (252d)": worst_move,
+                "Best 62d (252d)": best_move,
+            }
+        ]
+    )
+
+    snapshot_table.attrs["as_of_date"] = latest_timestamp
+    snapshot_table.attrs["as_of_label"] = latest_timestamp.strftime("%Y-%m-%d")
+
+    return snapshot_table
+
+
+def compute_path_from_start(
+    price_window: pd.Series,
+    change_type: str = "pct_change",
+    value_scale: Optional[float] = None,
+) -> pd.Series:
+    """Convert a price window into a cumulative path relative to its first observation."""
+    if price_window.empty:
+        raise ValueError("Price window is empty.")
+
+    baseline = float(price_window.iloc[0])
+
+    if change_type == "pct_change":
+        applied_scale = 100.0 if value_scale is None else float(value_scale)
+        return ((price_window / baseline) - 1.0) * applied_scale
+
+    if change_type == "difference":
+        applied_scale = 1.0 if value_scale is None else float(value_scale)
+        return (price_window - baseline) * applied_scale
+
+    raise ValueError("change_type must be either 'pct_change' or 'difference'.")
+
+
+def _infer_profile_value_label(display_unit: Optional[str]) -> str:
+    resolved_unit = (display_unit or "").strip().lower()
+
+    if resolved_unit == "%":
+        return "% change"
+
+    if resolved_unit == "bp":
+        return "bp change"
+
+    if resolved_unit:
+        return f"change ({display_unit})"
+
+    return "change"
+
+
+def build_daily_intra_period_profile_package(
+    raw_data: pd.DataFrame,
+    asset_label: str = "Asset",
+    price_col: str = "Close",
+    change_type: str = "pct_change",
+    value_scale: Optional[float] = None,
+    display_unit: Optional[str] = None,
+    recent_year_count: int = 3,
+) -> Dict[str, Any]:
+    """Build a same-month daily cumulative profile comparing recent years with historical norms."""
+    price_series = prepare_price_series(raw_data=raw_data, price_col=price_col)
+    latest_date = pd.Timestamp(price_series.index.max())
+    target_month = int(latest_date.month)
+    target_month_name = calendar.month_abbr[target_month]
+
+    monthly_profiles: dict[int, pd.Series] = {}
+    target_month_series = price_series[price_series.index.month == target_month]
+    for year, year_series in target_month_series.groupby(target_month_series.index.year):
+        year_series = year_series.sort_index()
+        if year_series.empty:
+            continue
+        cumulative_path = compute_path_from_start(
+            price_window=year_series,
+            change_type=change_type,
+            value_scale=value_scale,
+        )
+        full_month_index = pd.date_range(
+            start=f"{int(year)}-{target_month:02d}-01",
+            end=f"{int(year)}-{target_month:02d}-{calendar.monthrange(int(year), target_month)[1]:02d}",
+            freq="D",
+        )
+        calendar_day_path = cumulative_path.reindex(full_month_index).ffill().fillna(0.0)
+
+        if int(year) == int(latest_date.year) and target_month == int(latest_date.month):
+            calendar_day_path.loc[latest_date + pd.Timedelta(days=1) :] = np.nan
+
+        monthly_profiles[int(year)] = pd.Series(
+            calendar_day_path.values,
+            index=calendar_day_path.index.day,
+            dtype=float,
+        )
+
+    if not monthly_profiles:
+        raise ValueError("Not enough data to build the daily intra-period profile.")
+
+    month_day_count = max(
+        calendar.monthrange(int(year), target_month)[1]
+        for year in monthly_profiles
+    )
+    day_range = list(range(1, month_day_count + 1))
+    profile_matrix = pd.DataFrame(monthly_profiles).T.reindex(columns=day_range)
+    profile_matrix.index.name = "year"
+
+    benchmark_matrix = profile_matrix.copy()
+    average_profile = benchmark_matrix.mean(axis=0)
+    median_profile = benchmark_matrix.median(axis=0)
+
+    available_years_desc = sorted(profile_matrix.index.tolist(), reverse=True)
+    displayed_years = available_years_desc[: max(1, recent_year_count)]
+
+    value_label = _infer_profile_value_label(display_unit)
+    if (display_unit or "").strip() == "%":
+        figure_title = f"{asset_label} — {target_month_name} Daily Intra-Period Cum % Change"
+        y_axis_title = "Cumulative % change from start of month"
+    elif (display_unit or "").strip().lower() == "bp":
+        figure_title = f"{asset_label} — {target_month_name} Daily Intra-Period Cumulative Change (bp)"
+        y_axis_title = "Cumulative bp change from start of month"
+    else:
+        figure_title = f"{asset_label} — {target_month_name} Daily Intra-Period Cumulative Change"
+        y_axis_title = "Cumulative change from start of month"
+
+    recent_year_styles = [
+        ("#e31a1c", "solid", 3.0),
+        ("#33a02c", "dot", 2.2),
+        ("#3b4cc0", "dot", 2.2),
+    ]
+
+    fig = go.Figure()
+    for idx, year in enumerate(displayed_years):
+        color, dash, width = recent_year_styles[min(idx, len(recent_year_styles) - 1)]
+        fig.add_trace(
+            go.Scatter(
+                x=profile_matrix.columns.tolist(),
+                y=profile_matrix.loc[year].values,
+                mode="lines",
+                name=str(year),
+                line={"color": color, "width": width, "dash": dash},
+                hovertemplate=(
+                    "Day: %{x}<br>"
+                    + f"{year}: %{{y:.2f}}"
+                    + (display_unit or "")
+                    + "<extra></extra>"
+                ),
+            )
+        )
+
+    fig.add_trace(
+        go.Scatter(
+            x=profile_matrix.columns.tolist(),
+            y=average_profile.values,
+            mode="lines",
+            name="Average",
+            line={"color": "#f0ad00", "width": 2.5, "dash": "dash"},
+            hovertemplate="Day: %{x}<br>Average: %{y:.2f}" + (display_unit or "") + "<extra></extra>",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=profile_matrix.columns.tolist(),
+            y=median_profile.values,
+            mode="lines",
+            name="Median",
+            line={"color": "#7f7f7f", "width": 2.5, "dash": "dash"},
+            hovertemplate="Day: %{x}<br>Median: %{y:.2f}" + (display_unit or "") + "<extra></extra>",
+        )
+    )
+
+    fig.add_hline(y=0, line_dash="dot", line_color="rgba(0, 0, 0, 0.28)")
+    fig.update_layout(
+        title=figure_title,
+        template="plotly_white",
+        hovermode="x unified",
+        height=420,
+        margin={"l": 60, "r": 20, "t": 70, "b": 50},
+        xaxis_title="Day of Month",
+        yaxis_title=y_axis_title,
+        legend={"orientation": "v", "yanchor": "top", "y": 0.98, "xanchor": "left", "x": 1.01},
+    )
+
+    return {
+        "price_series": price_series,
+        "profile_matrix": profile_matrix,
+        "average_profile": average_profile,
+        "median_profile": median_profile,
+        "figure": fig,
+        "config": {
+            "asset_label": asset_label,
+            "price_col": price_col,
+            "change_type": change_type,
+            "value_scale": value_scale,
+            "display_unit": display_unit,
+            "target_month": target_month,
+            "target_month_name": target_month_name,
+            "value_label": value_label,
+        },
+    }
+
+
+def build_calendar_year_cumulative_profile_package(
+    raw_data: pd.DataFrame,
+    asset_label: str = "Asset",
+    price_col: str = "Close",
+    change_type: str = "pct_change",
+    value_scale: Optional[float] = None,
+    display_unit: Optional[str] = None,
+) -> Dict[str, Any]:
+    """Build a calendar-year cumulative path chart with historical average and percentile bands."""
+    price_series = prepare_price_series(raw_data=raw_data, price_col=price_col)
+    latest_date = pd.Timestamp(price_series.index.max()).normalize()
+    latest_year = int(latest_date.year)
+
+    reference_dates = pd.date_range("2001-01-01", "2001-12-31", freq="D")
+    reference_labels = reference_dates.strftime("%m-%d")
+    calendar_paths: dict[int, pd.Series] = {}
+    complete_years: list[int] = []
+
+    for year, year_series in price_series.groupby(price_series.index.year):
+        year_series = year_series.sort_index()
+        if year_series.empty:
+            continue
+
+        cumulative_path = compute_path_from_start(
+            price_window=year_series,
+            change_type=change_type,
+            value_scale=value_scale,
+        )
+        full_calendar_index = pd.date_range(f"{int(year)}-01-01", f"{int(year)}-12-31", freq="D")
+        calendar_series = cumulative_path.reindex(full_calendar_index).ffill().fillna(0.0)
+
+        year_end = pd.Timestamp(f"{int(year)}-12-31")
+        if int(year) == latest_year and latest_date < year_end:
+            calendar_series.loc[latest_date + pd.Timedelta(days=1) :] = np.nan
+
+        if year_series.index.min().month == 1 and year_series.index.max().month == 12:
+            complete_years.append(int(year))
+
+        calendar_series = calendar_series[~((calendar_series.index.month == 2) & (calendar_series.index.day == 29))]
+        calendar_series.index = calendar_series.index.strftime("%m-%d")
+        calendar_paths[int(year)] = calendar_series.reindex(reference_labels)
+
+    if not calendar_paths:
+        raise ValueError("Not enough data to build the calendar-year cumulative profile.")
+
+    calendar_matrix = pd.DataFrame(calendar_paths).T.reindex(columns=reference_labels)
+    calendar_matrix.index.name = "year"
+
+    benchmark_years = [year for year in complete_years if year != latest_year]
+    if benchmark_years:
+        benchmark_matrix = calendar_matrix.loc[benchmark_years]
+    else:
+        benchmark_matrix = calendar_matrix.drop(index=latest_year, errors="ignore")
+        if benchmark_matrix.empty:
+            benchmark_matrix = calendar_matrix
+
+    average_path = benchmark_matrix.mean(axis=0)
+    pct30_path = benchmark_matrix.quantile(0.30, axis=0)
+    pct70_path = benchmark_matrix.quantile(0.70, axis=0)
+    latest_path = calendar_matrix.loc[latest_year]
+
+    resolved_display_unit = (display_unit or "").strip()
+    if resolved_display_unit == "%":
+        figure_title = f"{asset_label} — Cumulative % Change over Calendar Year"
+        y_axis_title = "Cumulative % change (YTD)"
+    elif resolved_display_unit.lower() == "bp":
+        figure_title = f"{asset_label} — Cumulative Change over Calendar Year (bp)"
+        y_axis_title = "Cumulative change (bp)"
+    else:
+        figure_title = f"{asset_label} — Cumulative Change over Calendar Year"
+        y_axis_title = "Cumulative change (YTD)"
+
+    fig = go.Figure()
+    fig.add_trace(
+        go.Scatter(
+            x=reference_dates,
+            y=latest_path.values,
+            mode="lines",
+            name=str(latest_year),
+            line={"color": "#e31a1c", "width": 3.0},
+            hovertemplate="%{x|%b %d}<br>" + f"{latest_year}: %{{y:.2f}}" + resolved_display_unit + "<extra></extra>",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=reference_dates,
+            y=average_path.values,
+            mode="lines",
+            name="Average",
+            line={"color": "#b39b00", "width": 3.0},
+            hovertemplate="%{x|%b %d}<br>Average: %{y:.2f}" + resolved_display_unit + "<extra></extra>",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=reference_dates,
+            y=pct30_path.values,
+            mode="lines",
+            name="30th pct",
+            line={"color": "#33a02c", "width": 2.4, "dash": "dot"},
+            hovertemplate="%{x|%b %d}<br>30th pct: %{y:.2f}" + resolved_display_unit + "<extra></extra>",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=reference_dates,
+            y=pct70_path.values,
+            mode="lines",
+            name="70th pct",
+            line={"color": "#fb6a4a", "width": 2.4, "dash": "dot"},
+            hovertemplate="%{x|%b %d}<br>70th pct: %{y:.2f}" + resolved_display_unit + "<extra></extra>",
+        )
+    )
+
+    fig.add_hline(y=0, line_dash="dot", line_color="rgba(0, 0, 0, 0.28)")
+    fig.update_layout(
+        title=figure_title,
+        template="plotly_white",
+        hovermode="x unified",
+        height=420,
+        margin={"l": 60, "r": 20, "t": 70, "b": 50},
+        xaxis_title="Month (Jan-Dec)",
+        yaxis_title=y_axis_title,
+        legend={"orientation": "v", "yanchor": "top", "y": 0.98, "xanchor": "left", "x": 1.01},
+    )
+    fig.update_xaxes(
+        tickvals=pd.date_range("2001-01-01", "2001-12-01", freq="MS"),
+        tickformat="%b",
+    )
+
+    return {
+        "price_series": price_series,
+        "calendar_matrix": calendar_matrix,
+        "average_path": average_path,
+        "pct30_path": pct30_path,
+        "pct70_path": pct70_path,
+        "figure": fig,
+        "config": {
+            "asset_label": asset_label,
+            "price_col": price_col,
+            "change_type": change_type,
+            "value_scale": value_scale,
+            "display_unit": display_unit,
+            "latest_year": latest_year,
+        },
+    }
+
+
+def build_latest_year_monthly_comparison_package(
+    raw_data: pd.DataFrame,
+    asset_label: str = "Asset",
+    price_col: str = "Close",
+    change_type: str = "pct_change",
+    value_scale: Optional[float] = None,
+    display_unit: Optional[str] = None,
+) -> Dict[str, Any]:
+    """Build a monthly seasonality comparison chart: historical average/median vs latest year."""
+    price_series = prepare_price_series(raw_data=raw_data, price_col=price_col)
+    monthly_df_complete = compute_monthly_changes(
+        price_series=price_series,
+        change_type=change_type,
+        drop_incomplete_last_month=True,
+        value_scale=value_scale,
+    )
+    seasonality_matrix, summary_stats = build_monthly_seasonality_tables(monthly_df_complete)
+
+    monthly_df_latest = compute_monthly_changes(
+        price_series=price_series,
+        change_type=change_type,
+        drop_incomplete_last_month=False,
+        value_scale=value_scale,
+    )
+    latest_year = int(monthly_df_latest["year"].max())
+    latest_year_matrix = monthly_df_latest.pivot_table(
+        index="year",
+        columns="month",
+        values="monthly_change",
+        aggfunc="mean",
+    ).reindex(columns=MONTH_NUMBERS)
+    latest_year_matrix.columns = MONTH_LABELS
+    latest_year_row = latest_year_matrix.loc[latest_year].reindex(MONTH_LABELS)
+
+    x_labels = [
+        f"{month_label} ({int(round(win_rate))}%)"
+        for month_label, win_rate in zip(summary_stats["month_label"].astype(str), summary_stats["win_rate"])
+    ]
+
+    resolved_display_unit = (display_unit or "").strip()
+    if resolved_display_unit == "%":
+        figure_title = f"{asset_label} — Monthly Seasonality % (Latest Year vs Avg/Median)"
+        y_axis_title = "MoM % change"
+    elif resolved_display_unit.lower() == "bp":
+        figure_title = f"{asset_label} — Monthly Seasonality (Latest Year vs Avg/Median, bp)"
+        y_axis_title = "MoM change (bp)"
+    else:
+        figure_title = f"{asset_label} — Monthly Seasonality (Latest Year vs Avg/Median)"
+        y_axis_title = "MoM change"
+
+    fig = go.Figure()
+    fig.add_trace(
+        go.Bar(
+            x=x_labels,
+            y=summary_stats["average"],
+            name="Average",
+            marker_color="#8c8c8c",
+            hovertemplate="%{x}<br>Average: %{y:.2f}" + resolved_display_unit + "<extra></extra>",
+        )
+    )
+    fig.add_trace(
+        go.Bar(
+            x=x_labels,
+            y=summary_stats["median"],
+            name="Median",
+            marker_color="#d9d9d9",
+            hovertemplate="%{x}<br>Median: %{y:.2f}" + resolved_display_unit + "<extra></extra>",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=x_labels,
+            y=latest_year_row.values,
+            mode="lines+markers",
+            name=str(latest_year),
+            line={"color": "#e31a1c", "width": 3.0},
+            marker={"size": 8, "color": "#e31a1c"},
+            hovertemplate="%{x}<br>" + f"{latest_year}: %{{y:.2f}}" + resolved_display_unit + "<extra></extra>",
+        )
+    )
+
+    fig.add_hline(y=0, line_dash="dot", line_color="rgba(0, 0, 0, 0.28)")
+    fig.update_layout(
+        title=figure_title,
+        template="plotly_white",
+        barmode="group",
+        hovermode="x unified",
+        height=420,
+        margin={"l": 60, "r": 20, "t": 70, "b": 95},
+        xaxis_title="Month (Hit Rate %)",
+        yaxis_title=y_axis_title,
+        legend={"orientation": "v", "yanchor": "top", "y": 0.98, "xanchor": "left", "x": 1.01},
+    )
+    fig.update_xaxes(tickangle=25)
+
+    return {
+        "price_series": price_series,
+        "monthly_changes_complete": monthly_df_complete,
+        "monthly_changes_latest": monthly_df_latest,
+        "seasonality_matrix": seasonality_matrix,
+        "summary_stats": summary_stats,
+        "latest_year": latest_year,
+        "latest_year_row": latest_year_row,
+        "figure": fig,
+        "config": {
+            "asset_label": asset_label,
+            "price_col": price_col,
+            "change_type": change_type,
+            "value_scale": value_scale,
+            "display_unit": display_unit,
+        },
+    }
+
+
 def compute_monthly_changes(
     price_series: pd.Series,
     change_type: str = "pct_change",
@@ -602,6 +1136,7 @@ def build_cumulative_seasonality_package(
 def build_heatmap_matrix(
     monthly_df: pd.DataFrame,
     sort_descending: bool = True,
+    demean_columns: bool = False,
 ) -> pd.DataFrame:
     """Return a year-by-month matrix for seasonality heatmap visualization."""
     if monthly_df.empty:
@@ -614,6 +1149,10 @@ def build_heatmap_matrix(
         aggfunc="mean",
     ).reindex(columns=MONTH_NUMBERS)
     heatmap_matrix.columns = MONTH_LABELS
+
+    if demean_columns:
+        heatmap_matrix = heatmap_matrix.sub(heatmap_matrix.mean(axis=0, skipna=True), axis=1)
+
     heatmap_matrix = heatmap_matrix.sort_index(ascending=not sort_descending)
 
     return heatmap_matrix
@@ -843,6 +1382,7 @@ def build_seasonality_heatmap_package(
     clip_mode: str = "row",
     sort_descending: bool = True,
     decimals: int = 1,
+    demean_columns: bool = False,
 ) -> Dict[str, Any]:
     """End-to-end heatmap pipeline for notebooks and Streamlit."""
     price_series = prepare_price_series(raw_data=raw_data, price_col=price_col)
@@ -855,6 +1395,7 @@ def build_seasonality_heatmap_package(
     heatmap_matrix = build_heatmap_matrix(
         monthly_df=monthly_df,
         sort_descending=sort_descending,
+        demean_columns=demean_columns,
     )
 
     resolved_display_unit = infer_display_unit(
@@ -908,6 +1449,7 @@ def build_seasonality_heatmap_package(
             "drop_incomplete_last_month": drop_incomplete_last_month,
             "value_scale": value_scale,
             "display_unit": resolved_display_unit,
+            "demean_columns": demean_columns,
             "value_label": resolved_value_label,
             "clip_quantile": clip_quantile,
             "minimum_clip_value": minimum_clip_value,
