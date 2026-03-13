@@ -1,28 +1,29 @@
-country,bond_name,year,status,rows,from_date,to_date,error
-united kingdom,U.K. 12Y,2000,failed,0,01/01/2000,31/12/2000,Failed to download U.K. 12Y from 01/01/2000 to 31/12/2000 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2001,failed,0,01/01/2001,31/12/2001,Failed to download U.K. 12Y from 01/01/2001 to 31/12/2001 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2002,failed,0,01/01/2002,31/12/2002,Failed to download U.K. 12Y from 01/01/2002 to 31/12/2002 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2003,failed,0,01/01/2003,31/12/2003,"Failed to download U.K. 12Y from 01/01/2003 to 31/12/2003 after 60 attempts: ERR#0015: error 403, try again later."
-united kingdom,U.K. 12Y,2004,failed,0,01/01/2004,31/12/2004,Failed to download U.K. 12Y from 01/01/2004 to 31/12/2004 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2005,failed,0,01/01/2005,31/12/2005,Failed to download U.K. 12Y from 01/01/2005 to 31/12/2005 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2006,failed,0,01/01/2006,31/12/2006,Failed to download U.K. 12Y from 01/01/2006 to 31/12/2006 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2007,failed,0,01/01/2007,31/12/2007,Failed to download U.K. 12Y from 01/01/2007 to 31/12/2007 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2008,failed,0,01/01/2008,31/12/2008,Failed to download U.K. 12Y from 01/01/2008 to 31/12/2008 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2009,failed,0,01/01/2009,31/12/2009,Failed to download U.K. 12Y from 01/01/2009 to 31/12/2009 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2010,failed,0,01/01/2010,31/12/2010,Failed to download U.K. 12Y from 01/01/2010 to 31/12/2010 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2011,failed,0,01/01/2011,31/12/2011,Failed to download U.K. 12Y from 01/01/2011 to 31/12/2011 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2012,failed,0,01/01/2012,31/12/2012,Failed to download U.K. 12Y from 01/01/2012 to 31/12/2012 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2013,failed,0,01/01/2013,31/12/2013,Failed to download U.K. 12Y from 01/01/2013 to 31/12/2013 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2014,failed,0,01/01/2014,31/12/2014,Failed to download U.K. 12Y from 01/01/2014 to 31/12/2014 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2015,failed,0,01/01/2015,31/12/2015,Failed to download U.K. 12Y from 01/01/2015 to 31/12/2015 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2016,failed,0,01/01/2016,31/12/2016,Failed to download U.K. 12Y from 01/01/2016 to 31/12/2016 after 60 attempts: ERR#0069: bond information unavailable or not found.
-united kingdom,U.K. 12Y,2017,ok,205,01/01/2017,31/12/2017,
-united kingdom,U.K. 12Y,2018,ok,289,01/01/2018,31/12/2018,
-united kingdom,U.K. 12Y,2019,ok,298,01/01/2019,31/12/2019,
-united kingdom,U.K. 12Y,2020,ok,338,01/01/2020,31/12/2020,
-united kingdom,U.K. 12Y,2021,ok,359,01/01/2021,31/12/2021,
-united kingdom,U.K. 12Y,2022,ok,308,01/01/2022,31/12/2022,
-united kingdom,U.K. 12Y,2023,ok,327,01/01/2023,31/12/2023,
-united kingdom,U.K. 12Y,2024,ok,257,01/01/2024,31/12/2024,
-united kingdom,U.K. 12Y,2025,ok,254,01/01/2025,31/12/2025,
-united kingdom,U.K. 12Y,2026,ok,49,01/01/2026,11/03/2026,
+country,bond_name,year,status,rows,from_date,to_date,error,update_run_timestamp
+united kingdom,U.K. 12Y,2000,failed,0,01/01/2000,31/12/2000,Failed to download U.K. 12Y from 01/01/2000 to 31/12/2000 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2001,failed,0,01/01/2001,31/12/2001,Failed to download U.K. 12Y from 01/01/2001 to 31/12/2001 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2002,failed,0,01/01/2002,31/12/2002,Failed to download U.K. 12Y from 01/01/2002 to 31/12/2002 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2003,failed,0,01/01/2003,31/12/2003,"Failed to download U.K. 12Y from 01/01/2003 to 31/12/2003 after 60 attempts: ERR#0015: error 403, try again later.",
+united kingdom,U.K. 12Y,2004,failed,0,01/01/2004,31/12/2004,Failed to download U.K. 12Y from 01/01/2004 to 31/12/2004 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2005,failed,0,01/01/2005,31/12/2005,Failed to download U.K. 12Y from 01/01/2005 to 31/12/2005 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2006,failed,0,01/01/2006,31/12/2006,Failed to download U.K. 12Y from 01/01/2006 to 31/12/2006 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2007,failed,0,01/01/2007,31/12/2007,Failed to download U.K. 12Y from 01/01/2007 to 31/12/2007 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2008,failed,0,01/01/2008,31/12/2008,Failed to download U.K. 12Y from 01/01/2008 to 31/12/2008 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2009,failed,0,01/01/2009,31/12/2009,Failed to download U.K. 12Y from 01/01/2009 to 31/12/2009 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2010,failed,0,01/01/2010,31/12/2010,Failed to download U.K. 12Y from 01/01/2010 to 31/12/2010 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2011,failed,0,01/01/2011,31/12/2011,Failed to download U.K. 12Y from 01/01/2011 to 31/12/2011 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2012,failed,0,01/01/2012,31/12/2012,Failed to download U.K. 12Y from 01/01/2012 to 31/12/2012 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2013,failed,0,01/01/2013,31/12/2013,Failed to download U.K. 12Y from 01/01/2013 to 31/12/2013 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2014,failed,0,01/01/2014,31/12/2014,Failed to download U.K. 12Y from 01/01/2014 to 31/12/2014 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2015,failed,0,01/01/2015,31/12/2015,Failed to download U.K. 12Y from 01/01/2015 to 31/12/2015 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2016,failed,0,01/01/2016,31/12/2016,Failed to download U.K. 12Y from 01/01/2016 to 31/12/2016 after 60 attempts: ERR#0069: bond information unavailable or not found.,
+united kingdom,U.K. 12Y,2017,ok,205,01/01/2017,31/12/2017,,
+united kingdom,U.K. 12Y,2018,ok,289,01/01/2018,31/12/2018,,
+united kingdom,U.K. 12Y,2019,ok,298,01/01/2019,31/12/2019,,
+united kingdom,U.K. 12Y,2020,ok,338,01/01/2020,31/12/2020,,
+united kingdom,U.K. 12Y,2021,ok,359,01/01/2021,31/12/2021,,
+united kingdom,U.K. 12Y,2022,ok,308,01/01/2022,31/12/2022,,
+united kingdom,U.K. 12Y,2023,ok,327,01/01/2023,31/12/2023,,
+united kingdom,U.K. 12Y,2024,ok,257,01/01/2024,31/12/2024,,
+united kingdom,U.K. 12Y,2025,ok,254,01/01/2025,31/12/2025,,
+united kingdom,U.K. 12Y,2026,ok,49,01/01/2026,11/03/2026,,
+united kingdom,U.K. 12Y,2026,ok,8,04/03/2026,13/03/2026,,2026-03-13 22:59:10
