@@ -1,113 +1,113 @@
 country,bond_name,status,rows,start_date,end_date,history_path,request_log_path
-malaysia,Malaysia 3W,ok,3837,2006-08-22,2026-03-13,data/investpy_bond_yields/malaysia/malaysia_3w.csv,data/investpy_bond_yields/malaysia/malaysia_3w_request_log.csv
-malaysia,Malaysia 3Y,ok,6494,2001-10-16,2026-03-13,data/investpy_bond_yields/malaysia/malaysia_3y.csv,data/investpy_bond_yields/malaysia/malaysia_3y_request_log.csv
-malaysia,Malaysia 5Y,ok,6554,2001-10-17,2026-03-13,data/investpy_bond_yields/malaysia/malaysia_5y.csv,data/investpy_bond_yields/malaysia/malaysia_5y_request_log.csv
-malaysia,Malaysia 7M,ok,4026,2006-08-22,2026-03-13,data/investpy_bond_yields/malaysia/malaysia_7m.csv,data/investpy_bond_yields/malaysia/malaysia_7m_request_log.csv
-malaysia,Malaysia 7Y,ok,3551,2012-12-06,2026-03-13,data/investpy_bond_yields/malaysia/malaysia_7y.csv,data/investpy_bond_yields/malaysia/malaysia_7y_request_log.csv
-new zealand,New Zealand 10Y,ok,7038,2000-01-05,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_10y.csv,data/investpy_bond_yields/new_zealand/new_zealand_10y_request_log.csv
-new zealand,New Zealand 15Y,ok,2663,2016-12-21,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_15y.csv,data/investpy_bond_yields/new_zealand/new_zealand_15y_request_log.csv
-new zealand,New Zealand 1M,ok,6784,2000-01-05,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_1m.csv,data/investpy_bond_yields/new_zealand/new_zealand_1m_request_log.csv
-new zealand,New Zealand 1Y,ok,3805,2004-09-17,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_1y.csv,data/investpy_bond_yields/new_zealand/new_zealand_1y_request_log.csv
-new zealand,New Zealand 20Y,ok,2663,2016-12-21,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_20y.csv,data/investpy_bond_yields/new_zealand/new_zealand_20y_request_log.csv
-new zealand,New Zealand 2M,ok,6798,2000-01-05,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_2m.csv,data/investpy_bond_yields/new_zealand/new_zealand_2m_request_log.csv
-new zealand,New Zealand 2Y,ok,5843,2000-01-05,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_2y.csv,data/investpy_bond_yields/new_zealand/new_zealand_2y_request_log.csv
-new zealand,New Zealand 3M,ok,6886,2000-01-05,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_3m.csv,data/investpy_bond_yields/new_zealand/new_zealand_3m_request_log.csv
-new zealand,New Zealand 4M,ok,6757,2000-01-05,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_4m.csv,data/investpy_bond_yields/new_zealand/new_zealand_4m_request_log.csv
-new zealand,New Zealand 5M,ok,6970,2000-01-05,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_5m.csv,data/investpy_bond_yields/new_zealand/new_zealand_5m_request_log.csv
-new zealand,New Zealand 5Y,ok,6485,2001-02-01,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_5y.csv,data/investpy_bond_yields/new_zealand/new_zealand_5y_request_log.csv
-new zealand,New Zealand 6M,ok,7015,2000-01-05,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_6m.csv,data/investpy_bond_yields/new_zealand/new_zealand_6m_request_log.csv
-new zealand,New Zealand 7Y,ok,5745,2005-03-02,2026-03-13,data/investpy_bond_yields/new_zealand/new_zealand_7y.csv,data/investpy_bond_yields/new_zealand/new_zealand_7y_request_log.csv
-norway,Norway 10Y,ok,6491,2000-01-03,2026-03-13,data/investpy_bond_yields/norway/norway_10y.csv,data/investpy_bond_yields/norway/norway_10y_request_log.csv
-norway,Norway 1Y,ok,6686,2000-01-03,2026-03-13,data/investpy_bond_yields/norway/norway_1y.csv,data/investpy_bond_yields/norway/norway_1y_request_log.csv
+malaysia,Malaysia 3W,ok,3840,2006-08-22,2026-03-18,data/investpy_bond_yields/malaysia/malaysia_3w.csv,data/investpy_bond_yields/malaysia/malaysia_3w_request_log.csv
+malaysia,Malaysia 3Y,ok,6497,2001-10-16,2026-03-18,data/investpy_bond_yields/malaysia/malaysia_3y.csv,data/investpy_bond_yields/malaysia/malaysia_3y_request_log.csv
+malaysia,Malaysia 5Y,ok,6557,2001-10-17,2026-03-18,data/investpy_bond_yields/malaysia/malaysia_5y.csv,data/investpy_bond_yields/malaysia/malaysia_5y_request_log.csv
+malaysia,Malaysia 7M,ok,4029,2006-08-22,2026-03-18,data/investpy_bond_yields/malaysia/malaysia_7m.csv,data/investpy_bond_yields/malaysia/malaysia_7m_request_log.csv
+malaysia,Malaysia 7Y,ok,3554,2012-12-06,2026-03-18,data/investpy_bond_yields/malaysia/malaysia_7y.csv,data/investpy_bond_yields/malaysia/malaysia_7y_request_log.csv
+new zealand,New Zealand 10Y,ok,7042,2000-01-05,2026-03-19,data/investpy_bond_yields/new_zealand/new_zealand_10y.csv,data/investpy_bond_yields/new_zealand/new_zealand_10y_request_log.csv
+new zealand,New Zealand 15Y,ok,2667,2016-12-21,2026-03-19,data/investpy_bond_yields/new_zealand/new_zealand_15y.csv,data/investpy_bond_yields/new_zealand/new_zealand_15y_request_log.csv
+new zealand,New Zealand 1M,ok,6788,2000-01-05,2026-03-19,data/investpy_bond_yields/new_zealand/new_zealand_1m.csv,data/investpy_bond_yields/new_zealand/new_zealand_1m_request_log.csv
+new zealand,New Zealand 1Y,ok,3809,2004-09-17,2026-03-19,data/investpy_bond_yields/new_zealand/new_zealand_1y.csv,data/investpy_bond_yields/new_zealand/new_zealand_1y_request_log.csv
+new zealand,New Zealand 20Y,ok,2667,2016-12-21,2026-03-19,data/investpy_bond_yields/new_zealand/new_zealand_20y.csv,data/investpy_bond_yields/new_zealand/new_zealand_20y_request_log.csv
+new zealand,New Zealand 2M,ok,6802,2000-01-05,2026-03-19,data/investpy_bond_yields/new_zealand/new_zealand_2m.csv,data/investpy_bond_yields/new_zealand/new_zealand_2m_request_log.csv
+new zealand,New Zealand 2Y,ok,5847,2000-01-05,2026-03-19,data/investpy_bond_yields/new_zealand/new_zealand_2y.csv,data/investpy_bond_yields/new_zealand/new_zealand_2y_request_log.csv
+new zealand,New Zealand 3M,ok,6890,2000-01-05,2026-03-19,data/investpy_bond_yields/new_zealand/new_zealand_3m.csv,data/investpy_bond_yields/new_zealand/new_zealand_3m_request_log.csv
+new zealand,New Zealand 4M,ok,6760,2000-01-05,2026-03-18,data/investpy_bond_yields/new_zealand/new_zealand_4m.csv,data/investpy_bond_yields/new_zealand/new_zealand_4m_request_log.csv
+new zealand,New Zealand 5M,ok,6973,2000-01-05,2026-03-18,data/investpy_bond_yields/new_zealand/new_zealand_5m.csv,data/investpy_bond_yields/new_zealand/new_zealand_5m_request_log.csv
+new zealand,New Zealand 5Y,ok,6489,2001-02-01,2026-03-19,data/investpy_bond_yields/new_zealand/new_zealand_5y.csv,data/investpy_bond_yields/new_zealand/new_zealand_5y_request_log.csv
+new zealand,New Zealand 6M,ok,7019,2000-01-05,2026-03-19,data/investpy_bond_yields/new_zealand/new_zealand_6m.csv,data/investpy_bond_yields/new_zealand/new_zealand_6m_request_log.csv
+new zealand,New Zealand 7Y,ok,5749,2005-03-02,2026-03-19,data/investpy_bond_yields/new_zealand/new_zealand_7y.csv,data/investpy_bond_yields/new_zealand/new_zealand_7y_request_log.csv
+norway,Norway 10Y,ok,6494,2000-01-03,2026-03-18,data/investpy_bond_yields/norway/norway_10y.csv,data/investpy_bond_yields/norway/norway_10y_request_log.csv
+norway,Norway 1Y,ok,6689,2000-01-03,2026-03-18,data/investpy_bond_yields/norway/norway_1y.csv,data/investpy_bond_yields/norway/norway_1y_request_log.csv
 norway,Norway 2Y,ok,3898,2000-01-03,2020-06-15,data/investpy_bond_yields/norway/norway_2y.csv,data/investpy_bond_yields/norway/norway_2y_request_log.csv
 norway,Norway 3M,ok,5797,2000-01-03,2023-11-30,data/investpy_bond_yields/norway/norway_3m.csv,data/investpy_bond_yields/norway/norway_3m_request_log.csv
-norway,Norway 5Y,ok,6205,2000-01-03,2026-03-13,data/investpy_bond_yields/norway/norway_5y.csv,data/investpy_bond_yields/norway/norway_5y_request_log.csv
-norway,Norway 6M,ok,6355,2000-01-03,2026-03-13,data/investpy_bond_yields/norway/norway_6m.csv,data/investpy_bond_yields/norway/norway_6m_request_log.csv
-norway,Norway 9M,ok,4245,2008-06-18,2026-03-13,data/investpy_bond_yields/norway/norway_9m.csv,data/investpy_bond_yields/norway/norway_9m_request_log.csv
-philippines,Philippines 10Y,ok,6578,2000-06-14,2026-03-13,data/investpy_bond_yields/philippines/philippines_10y.csv,data/investpy_bond_yields/philippines/philippines_10y_request_log.csv
-philippines,Philippines 1M,ok,6186,2000-08-08,2026-03-13,data/investpy_bond_yields/philippines/philippines_1m.csv,data/investpy_bond_yields/philippines/philippines_1m_request_log.csv
-philippines,Philippines 1Y,ok,109,2025-10-14,2026-03-13,data/investpy_bond_yields/philippines/philippines_1y.csv,data/investpy_bond_yields/philippines/philippines_1y_request_log.csv
-philippines,Philippines 20Y,ok,4352,2009-08-11,2026-03-13,data/investpy_bond_yields/philippines/philippines_20y.csv,data/investpy_bond_yields/philippines/philippines_20y_request_log.csv
+norway,Norway 5Y,ok,6208,2000-01-03,2026-03-18,data/investpy_bond_yields/norway/norway_5y.csv,data/investpy_bond_yields/norway/norway_5y_request_log.csv
+norway,Norway 6M,ok,6358,2000-01-03,2026-03-18,data/investpy_bond_yields/norway/norway_6m.csv,data/investpy_bond_yields/norway/norway_6m_request_log.csv
+norway,Norway 9M,ok,4248,2008-06-18,2026-03-18,data/investpy_bond_yields/norway/norway_9m.csv,data/investpy_bond_yields/norway/norway_9m_request_log.csv
+philippines,Philippines 10Y,ok,6582,2000-06-14,2026-03-19,data/investpy_bond_yields/philippines/philippines_10y.csv,data/investpy_bond_yields/philippines/philippines_10y_request_log.csv
+philippines,Philippines 1M,ok,6190,2000-08-08,2026-03-19,data/investpy_bond_yields/philippines/philippines_1m.csv,data/investpy_bond_yields/philippines/philippines_1m_request_log.csv
+philippines,Philippines 1Y,ok,113,2025-10-14,2026-03-19,data/investpy_bond_yields/philippines/philippines_1y.csv,data/investpy_bond_yields/philippines/philippines_1y_request_log.csv
+philippines,Philippines 20Y,ok,4356,2009-08-11,2026-03-19,data/investpy_bond_yields/philippines/philippines_20y.csv,data/investpy_bond_yields/philippines/philippines_20y_request_log.csv
 philippines,Philippines 25Y,ok,4985,2001-03-09,2020-09-09,data/investpy_bond_yields/philippines/philippines_25y.csv,data/investpy_bond_yields/philippines/philippines_25y_request_log.csv
-philippines,Philippines 2Y,ok,6546,2000-06-14,2026-03-13,data/investpy_bond_yields/philippines/philippines_2y.csv,data/investpy_bond_yields/philippines/philippines_2y_request_log.csv
-philippines,Philippines 3M,ok,6568,2000-06-14,2026-03-13,data/investpy_bond_yields/philippines/philippines_3m.csv,data/investpy_bond_yields/philippines/philippines_3m_request_log.csv
-philippines,Philippines 3Y,ok,6175,2002-03-01,2026-03-13,data/investpy_bond_yields/philippines/philippines_3y.csv,data/investpy_bond_yields/philippines/philippines_3y_request_log.csv
-philippines,Philippines 4Y,ok,6121,2002-05-21,2026-03-13,data/investpy_bond_yields/philippines/philippines_4y.csv,data/investpy_bond_yields/philippines/philippines_4y_request_log.csv
-philippines,Philippines 5Y,ok,6577,2000-06-14,2026-03-13,data/investpy_bond_yields/philippines/philippines_5y.csv,data/investpy_bond_yields/philippines/philippines_5y_request_log.csv
-philippines,Philippines 6M,ok,6585,2000-06-14,2026-03-13,data/investpy_bond_yields/philippines/philippines_6m.csv,data/investpy_bond_yields/philippines/philippines_6m_request_log.csv
-philippines,Philippines 7Y,ok,6590,2000-06-14,2026-03-13,data/investpy_bond_yields/philippines/philippines_7y.csv,data/investpy_bond_yields/philippines/philippines_7y_request_log.csv
-south korea,South Korea 10Y,ok,6864,2000-10-26,2026-03-13,data/investpy_bond_yields/south_korea/south_korea_10y.csv,data/investpy_bond_yields/south_korea/south_korea_10y_request_log.csv
-south korea,South Korea 1Y,ok,6585,2000-01-04,2026-03-12,data/investpy_bond_yields/south_korea/south_korea_1y.csv,data/investpy_bond_yields/south_korea/south_korea_1y_request_log.csv
-south korea,South Korea 20Y,ok,5771,2006-01-26,2026-03-13,data/investpy_bond_yields/south_korea/south_korea_20y.csv,data/investpy_bond_yields/south_korea/south_korea_20y_request_log.csv
-south korea,South Korea 2Y,ok,7197,2000-01-04,2026-03-13,data/investpy_bond_yields/south_korea/south_korea_2y.csv,data/investpy_bond_yields/south_korea/south_korea_2y_request_log.csv
-south korea,South Korea 30Y,ok,4019,2012-09-12,2026-03-13,data/investpy_bond_yields/south_korea/south_korea_30y.csv,data/investpy_bond_yields/south_korea/south_korea_30y_request_log.csv
-south korea,South Korea 3Y,ok,7549,2000-01-04,2026-03-13,data/investpy_bond_yields/south_korea/south_korea_3y.csv,data/investpy_bond_yields/south_korea/south_korea_3y_request_log.csv
-south korea,South Korea 4Y,ok,6736,2000-01-04,2026-03-13,data/investpy_bond_yields/south_korea/south_korea_4y.csv,data/investpy_bond_yields/south_korea/south_korea_4y_request_log.csv
-south korea,South Korea 50Y,ok,2981,2016-10-12,2026-03-13,data/investpy_bond_yields/south_korea/south_korea_50y.csv,data/investpy_bond_yields/south_korea/south_korea_50y_request_log.csv
-south korea,South Korea 5Y,ok,7503,2000-01-04,2026-03-13,data/investpy_bond_yields/south_korea/south_korea_5y.csv,data/investpy_bond_yields/south_korea/south_korea_5y_request_log.csv
-switzerland,Switzerland 10Y,ok,6521,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_10y.csv,data/investpy_bond_yields/switzerland/switzerland_10y_request_log.csv
-switzerland,Switzerland 15Y,ok,4306,2007-08-31,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_15y.csv,data/investpy_bond_yields/switzerland/switzerland_15y_request_log.csv
-switzerland,Switzerland 1M,ok,7698,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_1m.csv,data/investpy_bond_yields/switzerland/switzerland_1m_request_log.csv
-switzerland,Switzerland 1W,ok,5094,2010-05-28,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_1w.csv,data/investpy_bond_yields/switzerland/switzerland_1w_request_log.csv
-switzerland,Switzerland 1Y,ok,7620,2000-01-03,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_1y.csv,data/investpy_bond_yields/switzerland/switzerland_1y_request_log.csv
-switzerland,Switzerland 20Y,ok,5795,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_20y.csv,data/investpy_bond_yields/switzerland/switzerland_20y_request_log.csv
-switzerland,Switzerland 2M,ok,7689,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_2m.csv,data/investpy_bond_yields/switzerland/switzerland_2m_request_log.csv
-switzerland,Switzerland 2Y,ok,6504,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_2y.csv,data/investpy_bond_yields/switzerland/switzerland_2y_request_log.csv
-switzerland,Switzerland 30Y,ok,6145,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_30y.csv,data/investpy_bond_yields/switzerland/switzerland_30y_request_log.csv
-switzerland,Switzerland 3M,ok,7732,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_3m.csv,data/investpy_bond_yields/switzerland/switzerland_3m_request_log.csv
-switzerland,Switzerland 3Y,ok,6520,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_3y.csv,data/investpy_bond_yields/switzerland/switzerland_3y_request_log.csv
-switzerland,Switzerland 4Y,ok,6507,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_4y.csv,data/investpy_bond_yields/switzerland/switzerland_4y_request_log.csv
+philippines,Philippines 2Y,ok,6550,2000-06-14,2026-03-19,data/investpy_bond_yields/philippines/philippines_2y.csv,data/investpy_bond_yields/philippines/philippines_2y_request_log.csv
+philippines,Philippines 3M,ok,6572,2000-06-14,2026-03-19,data/investpy_bond_yields/philippines/philippines_3m.csv,data/investpy_bond_yields/philippines/philippines_3m_request_log.csv
+philippines,Philippines 3Y,ok,6179,2002-03-01,2026-03-19,data/investpy_bond_yields/philippines/philippines_3y.csv,data/investpy_bond_yields/philippines/philippines_3y_request_log.csv
+philippines,Philippines 4Y,ok,6125,2002-05-21,2026-03-19,data/investpy_bond_yields/philippines/philippines_4y.csv,data/investpy_bond_yields/philippines/philippines_4y_request_log.csv
+philippines,Philippines 5Y,ok,6581,2000-06-14,2026-03-19,data/investpy_bond_yields/philippines/philippines_5y.csv,data/investpy_bond_yields/philippines/philippines_5y_request_log.csv
+philippines,Philippines 6M,ok,6589,2000-06-14,2026-03-19,data/investpy_bond_yields/philippines/philippines_6m.csv,data/investpy_bond_yields/philippines/philippines_6m_request_log.csv
+philippines,Philippines 7Y,ok,6594,2000-06-14,2026-03-19,data/investpy_bond_yields/philippines/philippines_7y.csv,data/investpy_bond_yields/philippines/philippines_7y_request_log.csv
+south korea,South Korea 10Y,ok,6868,2000-10-26,2026-03-19,data/investpy_bond_yields/south_korea/south_korea_10y.csv,data/investpy_bond_yields/south_korea/south_korea_10y_request_log.csv
+south korea,South Korea 1Y,ok,6589,2000-01-04,2026-03-18,data/investpy_bond_yields/south_korea/south_korea_1y.csv,data/investpy_bond_yields/south_korea/south_korea_1y_request_log.csv
+south korea,South Korea 20Y,ok,5775,2006-01-26,2026-03-19,data/investpy_bond_yields/south_korea/south_korea_20y.csv,data/investpy_bond_yields/south_korea/south_korea_20y_request_log.csv
+south korea,South Korea 2Y,ok,7201,2000-01-04,2026-03-19,data/investpy_bond_yields/south_korea/south_korea_2y.csv,data/investpy_bond_yields/south_korea/south_korea_2y_request_log.csv
+south korea,South Korea 30Y,ok,4023,2012-09-12,2026-03-19,data/investpy_bond_yields/south_korea/south_korea_30y.csv,data/investpy_bond_yields/south_korea/south_korea_30y_request_log.csv
+south korea,South Korea 3Y,ok,7553,2000-01-04,2026-03-19,data/investpy_bond_yields/south_korea/south_korea_3y.csv,data/investpy_bond_yields/south_korea/south_korea_3y_request_log.csv
+south korea,South Korea 4Y,ok,6739,2000-01-04,2026-03-18,data/investpy_bond_yields/south_korea/south_korea_4y.csv,data/investpy_bond_yields/south_korea/south_korea_4y_request_log.csv
+south korea,South Korea 50Y,ok,2983,2016-10-12,2026-03-17,data/investpy_bond_yields/south_korea/south_korea_50y.csv,data/investpy_bond_yields/south_korea/south_korea_50y_request_log.csv
+south korea,South Korea 5Y,ok,7507,2000-01-04,2026-03-19,data/investpy_bond_yields/south_korea/south_korea_5y.csv,data/investpy_bond_yields/south_korea/south_korea_5y_request_log.csv
+switzerland,Switzerland 10Y,ok,6524,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_10y.csv,data/investpy_bond_yields/switzerland/switzerland_10y_request_log.csv
+switzerland,Switzerland 15Y,ok,4309,2007-08-31,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_15y.csv,data/investpy_bond_yields/switzerland/switzerland_15y_request_log.csv
+switzerland,Switzerland 1M,ok,7701,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_1m.csv,data/investpy_bond_yields/switzerland/switzerland_1m_request_log.csv
+switzerland,Switzerland 1W,ok,5097,2010-05-28,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_1w.csv,data/investpy_bond_yields/switzerland/switzerland_1w_request_log.csv
+switzerland,Switzerland 1Y,ok,7623,2000-01-03,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_1y.csv,data/investpy_bond_yields/switzerland/switzerland_1y_request_log.csv
+switzerland,Switzerland 20Y,ok,5798,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_20y.csv,data/investpy_bond_yields/switzerland/switzerland_20y_request_log.csv
+switzerland,Switzerland 2M,ok,7692,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_2m.csv,data/investpy_bond_yields/switzerland/switzerland_2m_request_log.csv
+switzerland,Switzerland 2Y,ok,6507,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_2y.csv,data/investpy_bond_yields/switzerland/switzerland_2y_request_log.csv
+switzerland,Switzerland 30Y,ok,6148,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_30y.csv,data/investpy_bond_yields/switzerland/switzerland_30y_request_log.csv
+switzerland,Switzerland 3M,ok,7735,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_3m.csv,data/investpy_bond_yields/switzerland/switzerland_3m_request_log.csv
+switzerland,Switzerland 3Y,ok,6523,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_3y.csv,data/investpy_bond_yields/switzerland/switzerland_3y_request_log.csv
+switzerland,Switzerland 4Y,ok,6510,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_4y.csv,data/investpy_bond_yields/switzerland/switzerland_4y_request_log.csv
 switzerland,Switzerland 50Y,ok,1614,2014-11-05,2021-04-12,data/investpy_bond_yields/switzerland/switzerland_50y.csv,data/investpy_bond_yields/switzerland/switzerland_50y_request_log.csv
-switzerland,Switzerland 5Y,ok,6629,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_5y.csv,data/investpy_bond_yields/switzerland/switzerland_5y_request_log.csv
-switzerland,Switzerland 6M,ok,7706,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_6m.csv,data/investpy_bond_yields/switzerland/switzerland_6m_request_log.csv
-switzerland,Switzerland 6Y,ok,6526,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_6y.csv,data/investpy_bond_yields/switzerland/switzerland_6y_request_log.csv
-switzerland,Switzerland 7Y,ok,6527,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_7y.csv,data/investpy_bond_yields/switzerland/switzerland_7y_request_log.csv
-switzerland,Switzerland 8Y,ok,6049,2000-04-25,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_8y.csv,data/investpy_bond_yields/switzerland/switzerland_8y_request_log.csv
-switzerland,Switzerland 9Y,ok,6525,2000-01-04,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_9y.csv,data/investpy_bond_yields/switzerland/switzerland_9y_request_log.csv
-switzerland,Switzerland Overnight,ok,5923,2006-10-20,2026-03-13,data/investpy_bond_yields/switzerland/switzerland_overnight.csv,data/investpy_bond_yields/switzerland/switzerland_overnight_request_log.csv
-taiwan,Taiwan 10Y,ok,6699,2000-01-04,2026-03-13,data/investpy_bond_yields/taiwan/taiwan_10y.csv,data/investpy_bond_yields/taiwan/taiwan_10y_request_log.csv
-taiwan,Taiwan 20Y,ok,6471,2000-01-04,2026-03-13,data/investpy_bond_yields/taiwan/taiwan_20y.csv,data/investpy_bond_yields/taiwan/taiwan_20y_request_log.csv
-taiwan,Taiwan 2Y,ok,5312,2002-01-24,2026-03-13,data/investpy_bond_yields/taiwan/taiwan_2y.csv,data/investpy_bond_yields/taiwan/taiwan_2y_request_log.csv
-taiwan,Taiwan 30Y,ok,4890,2001-07-18,2026-03-13,data/investpy_bond_yields/taiwan/taiwan_30y.csv,data/investpy_bond_yields/taiwan/taiwan_30y_request_log.csv
-taiwan,Taiwan 5Y,ok,6616,2000-01-04,2026-03-13,data/investpy_bond_yields/taiwan/taiwan_5y.csv,data/investpy_bond_yields/taiwan/taiwan_5y_request_log.csv
-thailand,Thailand 10Y,ok,5862,2001-01-16,2026-03-13,data/investpy_bond_yields/thailand/thailand_10y.csv,data/investpy_bond_yields/thailand/thailand_10y_request_log.csv
-thailand,Thailand 12Y,ok,5456,2001-01-17,2026-03-13,data/investpy_bond_yields/thailand/thailand_12y.csv,data/investpy_bond_yields/thailand/thailand_12y_request_log.csv
-thailand,Thailand 14Y,ok,5495,2001-01-16,2026-03-13,data/investpy_bond_yields/thailand/thailand_14y.csv,data/investpy_bond_yields/thailand/thailand_14y_request_log.csv
-thailand,Thailand 15Y,ok,2128,2016-01-05,2026-03-13,data/investpy_bond_yields/thailand/thailand_15y.csv,data/investpy_bond_yields/thailand/thailand_15y_request_log.csv
-thailand,Thailand 16Y,ok,4362,2005-06-17,2026-03-13,data/investpy_bond_yields/thailand/thailand_16y.csv,data/investpy_bond_yields/thailand/thailand_16y_request_log.csv
-thailand,Thailand 1Y,ok,5465,2001-01-16,2026-03-13,data/investpy_bond_yields/thailand/thailand_1y.csv,data/investpy_bond_yields/thailand/thailand_1y_request_log.csv
-thailand,Thailand 20Y,ok,2071,2015-11-26,2026-03-13,data/investpy_bond_yields/thailand/thailand_20y.csv,data/investpy_bond_yields/thailand/thailand_20y_request_log.csv
-thailand,Thailand 2Y,ok,5222,2001-01-16,2026-03-13,data/investpy_bond_yields/thailand/thailand_2y.csv,data/investpy_bond_yields/thailand/thailand_2y_request_log.csv
-thailand,Thailand 3Y,ok,1977,2016-01-05,2026-03-13,data/investpy_bond_yields/thailand/thailand_3y.csv,data/investpy_bond_yields/thailand/thailand_3y_request_log.csv
-thailand,Thailand 5Y,ok,2746,2013-07-26,2026-03-13,data/investpy_bond_yields/thailand/thailand_5y.csv,data/investpy_bond_yields/thailand/thailand_5y_request_log.csv
-thailand,Thailand 7Y,ok,5611,2001-01-16,2026-03-13,data/investpy_bond_yields/thailand/thailand_7y.csv,data/investpy_bond_yields/thailand/thailand_7y_request_log.csv
-united kingdom,U.K. 10Y,ok,7362,2000-01-03,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_10y.csv,data/investpy_bond_yields/united_kingdom/u_k_10y_request_log.csv
-united kingdom,U.K. 12Y,ok,2686,2017-03-16,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_12y.csv,data/investpy_bond_yields/united_kingdom/u_k_12y_request_log.csv
-united kingdom,U.K. 15Y,ok,7320,2000-01-04,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_15y.csv,data/investpy_bond_yields/united_kingdom/u_k_15y_request_log.csv
-united kingdom,U.K. 1M,ok,5972,2000-01-03,2026-03-12,data/investpy_bond_yields/united_kingdom/u_k_1m.csv,data/investpy_bond_yields/united_kingdom/u_k_1m_request_log.csv
-united kingdom,U.K. 1Y,ok,7499,2000-01-03,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_1y.csv,data/investpy_bond_yields/united_kingdom/u_k_1y_request_log.csv
-united kingdom,U.K. 20Y,ok,7156,2000-01-04,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_20y.csv,data/investpy_bond_yields/united_kingdom/u_k_20y_request_log.csv
-united kingdom,U.K. 25Y,ok,4824,2009-06-19,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_25y.csv,data/investpy_bond_yields/united_kingdom/u_k_25y_request_log.csv
-united kingdom,U.K. 2Y,ok,7376,2000-01-04,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_2y.csv,data/investpy_bond_yields/united_kingdom/u_k_2y_request_log.csv
-united kingdom,U.K. 30Y,ok,7144,2000-01-03,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_30y.csv,data/investpy_bond_yields/united_kingdom/u_k_30y_request_log.csv
-united kingdom,U.K. 3M,ok,6045,2000-01-04,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_3m.csv,data/investpy_bond_yields/united_kingdom/u_k_3m_request_log.csv
-united kingdom,U.K. 3Y,ok,7351,2000-01-04,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_3y.csv,data/investpy_bond_yields/united_kingdom/u_k_3y_request_log.csv
-united kingdom,U.K. 40Y,ok,5423,2006-05-09,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_40y.csv,data/investpy_bond_yields/united_kingdom/u_k_40y_request_log.csv
-united kingdom,U.K. 4Y,ok,7302,2000-01-03,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_4y.csv,data/investpy_bond_yields/united_kingdom/u_k_4y_request_log.csv
-united kingdom,U.K. 50Y,ok,5882,2005-05-19,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_50y.csv,data/investpy_bond_yields/united_kingdom/u_k_50y_request_log.csv
-united kingdom,U.K. 5Y,ok,7386,2000-01-01,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_5y.csv,data/investpy_bond_yields/united_kingdom/u_k_5y_request_log.csv
-united kingdom,U.K. 6M,ok,5339,2002-06-24,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_6m.csv,data/investpy_bond_yields/united_kingdom/u_k_6m_request_log.csv
-united kingdom,U.K. 6Y,ok,7252,2000-01-03,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_6y.csv,data/investpy_bond_yields/united_kingdom/u_k_6y_request_log.csv
-united kingdom,U.K. 7Y,ok,7162,2000-01-03,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_7y.csv,data/investpy_bond_yields/united_kingdom/u_k_7y_request_log.csv
-united kingdom,U.K. 8Y,ok,7350,2000-01-03,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_8y.csv,data/investpy_bond_yields/united_kingdom/u_k_8y_request_log.csv
-united kingdom,U.K. 9Y,ok,6955,2000-01-03,2026-03-13,data/investpy_bond_yields/united_kingdom/u_k_9y.csv,data/investpy_bond_yields/united_kingdom/u_k_9y_request_log.csv
-united states,U.S. 10Y,ok,6765,2000-01-03,2026-03-13,data/investpy_bond_yields/united_states/u_s_10y.csv,data/investpy_bond_yields/united_states/u_s_10y_request_log.csv
-united states,U.S. 1M,ok,6241,2001-12-27,2026-03-13,data/investpy_bond_yields/united_states/u_s_1m.csv,data/investpy_bond_yields/united_states/u_s_1m_request_log.csv
-united states,U.S. 1Y,ok,4654,2008-06-05,2026-03-13,data/investpy_bond_yields/united_states/u_s_1y.csv,data/investpy_bond_yields/united_states/u_s_1y_request_log.csv
-united states,U.S. 2Y,ok,7067,2000-01-03,2026-03-13,data/investpy_bond_yields/united_states/u_s_2y.csv,data/investpy_bond_yields/united_states/u_s_2y_request_log.csv
-united states,U.S. 30Y,ok,6780,2000-01-03,2026-03-13,data/investpy_bond_yields/united_states/u_s_30y.csv,data/investpy_bond_yields/united_states/u_s_30y_request_log.csv
-united states,U.S. 3M,ok,6779,2000-01-03,2026-03-13,data/investpy_bond_yields/united_states/u_s_3m.csv,data/investpy_bond_yields/united_states/u_s_3m_request_log.csv
-united states,U.S. 3Y,ok,6008,2003-05-06,2026-03-13,data/investpy_bond_yields/united_states/u_s_3y.csv,data/investpy_bond_yields/united_states/u_s_3y_request_log.csv
-united states,U.S. 5Y,ok,6944,2000-01-03,2026-03-13,data/investpy_bond_yields/united_states/u_s_5y.csv,data/investpy_bond_yields/united_states/u_s_5y_request_log.csv
-united states,U.S. 6M,ok,6727,2000-01-03,2026-03-13,data/investpy_bond_yields/united_states/u_s_6m.csv,data/investpy_bond_yields/united_states/u_s_6m_request_log.csv
-united states,U.S. 7Y,ok,4463,2009-03-12,2026-03-13,data/investpy_bond_yields/united_states/u_s_7y.csv,data/investpy_bond_yields/united_states/u_s_7y_request_log.csv
+switzerland,Switzerland 5Y,ok,6632,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_5y.csv,data/investpy_bond_yields/switzerland/switzerland_5y_request_log.csv
+switzerland,Switzerland 6M,ok,7709,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_6m.csv,data/investpy_bond_yields/switzerland/switzerland_6m_request_log.csv
+switzerland,Switzerland 6Y,ok,6529,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_6y.csv,data/investpy_bond_yields/switzerland/switzerland_6y_request_log.csv
+switzerland,Switzerland 7Y,ok,6530,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_7y.csv,data/investpy_bond_yields/switzerland/switzerland_7y_request_log.csv
+switzerland,Switzerland 8Y,ok,6052,2000-04-25,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_8y.csv,data/investpy_bond_yields/switzerland/switzerland_8y_request_log.csv
+switzerland,Switzerland 9Y,ok,6528,2000-01-04,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_9y.csv,data/investpy_bond_yields/switzerland/switzerland_9y_request_log.csv
+switzerland,Switzerland Overnight,ok,5926,2006-10-20,2026-03-18,data/investpy_bond_yields/switzerland/switzerland_overnight.csv,data/investpy_bond_yields/switzerland/switzerland_overnight_request_log.csv
+taiwan,Taiwan 10Y,ok,6703,2000-01-04,2026-03-19,data/investpy_bond_yields/taiwan/taiwan_10y.csv,data/investpy_bond_yields/taiwan/taiwan_10y_request_log.csv
+taiwan,Taiwan 20Y,ok,6475,2000-01-04,2026-03-19,data/investpy_bond_yields/taiwan/taiwan_20y.csv,data/investpy_bond_yields/taiwan/taiwan_20y_request_log.csv
+taiwan,Taiwan 2Y,ok,5316,2002-01-24,2026-03-19,data/investpy_bond_yields/taiwan/taiwan_2y.csv,data/investpy_bond_yields/taiwan/taiwan_2y_request_log.csv
+taiwan,Taiwan 30Y,ok,4894,2001-07-18,2026-03-19,data/investpy_bond_yields/taiwan/taiwan_30y.csv,data/investpy_bond_yields/taiwan/taiwan_30y_request_log.csv
+taiwan,Taiwan 5Y,ok,6620,2000-01-04,2026-03-19,data/investpy_bond_yields/taiwan/taiwan_5y.csv,data/investpy_bond_yields/taiwan/taiwan_5y_request_log.csv
+thailand,Thailand 10Y,ok,5866,2001-01-16,2026-03-19,data/investpy_bond_yields/thailand/thailand_10y.csv,data/investpy_bond_yields/thailand/thailand_10y_request_log.csv
+thailand,Thailand 12Y,ok,5460,2001-01-17,2026-03-19,data/investpy_bond_yields/thailand/thailand_12y.csv,data/investpy_bond_yields/thailand/thailand_12y_request_log.csv
+thailand,Thailand 14Y,ok,5499,2001-01-16,2026-03-19,data/investpy_bond_yields/thailand/thailand_14y.csv,data/investpy_bond_yields/thailand/thailand_14y_request_log.csv
+thailand,Thailand 15Y,ok,2131,2016-01-05,2026-03-18,data/investpy_bond_yields/thailand/thailand_15y.csv,data/investpy_bond_yields/thailand/thailand_15y_request_log.csv
+thailand,Thailand 16Y,ok,4366,2005-06-17,2026-03-19,data/investpy_bond_yields/thailand/thailand_16y.csv,data/investpy_bond_yields/thailand/thailand_16y_request_log.csv
+thailand,Thailand 1Y,ok,5469,2001-01-16,2026-03-19,data/investpy_bond_yields/thailand/thailand_1y.csv,data/investpy_bond_yields/thailand/thailand_1y_request_log.csv
+thailand,Thailand 20Y,ok,2074,2015-11-26,2026-03-18,data/investpy_bond_yields/thailand/thailand_20y.csv,data/investpy_bond_yields/thailand/thailand_20y_request_log.csv
+thailand,Thailand 2Y,ok,5226,2001-01-16,2026-03-19,data/investpy_bond_yields/thailand/thailand_2y.csv,data/investpy_bond_yields/thailand/thailand_2y_request_log.csv
+thailand,Thailand 3Y,ok,1980,2016-01-05,2026-03-18,data/investpy_bond_yields/thailand/thailand_3y.csv,data/investpy_bond_yields/thailand/thailand_3y_request_log.csv
+thailand,Thailand 5Y,ok,2750,2013-07-26,2026-03-19,data/investpy_bond_yields/thailand/thailand_5y.csv,data/investpy_bond_yields/thailand/thailand_5y_request_log.csv
+thailand,Thailand 7Y,ok,5615,2001-01-16,2026-03-19,data/investpy_bond_yields/thailand/thailand_7y.csv,data/investpy_bond_yields/thailand/thailand_7y_request_log.csv
+united kingdom,U.K. 10Y,ok,7365,2000-01-03,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_10y.csv,data/investpy_bond_yields/united_kingdom/u_k_10y_request_log.csv
+united kingdom,U.K. 12Y,ok,2689,2017-03-16,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_12y.csv,data/investpy_bond_yields/united_kingdom/u_k_12y_request_log.csv
+united kingdom,U.K. 15Y,ok,7323,2000-01-04,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_15y.csv,data/investpy_bond_yields/united_kingdom/u_k_15y_request_log.csv
+united kingdom,U.K. 1M,ok,5976,2000-01-03,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_1m.csv,data/investpy_bond_yields/united_kingdom/u_k_1m_request_log.csv
+united kingdom,U.K. 1Y,ok,7502,2000-01-03,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_1y.csv,data/investpy_bond_yields/united_kingdom/u_k_1y_request_log.csv
+united kingdom,U.K. 20Y,ok,7159,2000-01-04,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_20y.csv,data/investpy_bond_yields/united_kingdom/u_k_20y_request_log.csv
+united kingdom,U.K. 25Y,ok,4827,2009-06-19,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_25y.csv,data/investpy_bond_yields/united_kingdom/u_k_25y_request_log.csv
+united kingdom,U.K. 2Y,ok,7379,2000-01-04,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_2y.csv,data/investpy_bond_yields/united_kingdom/u_k_2y_request_log.csv
+united kingdom,U.K. 30Y,ok,7147,2000-01-03,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_30y.csv,data/investpy_bond_yields/united_kingdom/u_k_30y_request_log.csv
+united kingdom,U.K. 3M,ok,6048,2000-01-04,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_3m.csv,data/investpy_bond_yields/united_kingdom/u_k_3m_request_log.csv
+united kingdom,U.K. 3Y,ok,7354,2000-01-04,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_3y.csv,data/investpy_bond_yields/united_kingdom/u_k_3y_request_log.csv
+united kingdom,U.K. 40Y,ok,5426,2006-05-09,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_40y.csv,data/investpy_bond_yields/united_kingdom/u_k_40y_request_log.csv
+united kingdom,U.K. 4Y,ok,7305,2000-01-03,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_4y.csv,data/investpy_bond_yields/united_kingdom/u_k_4y_request_log.csv
+united kingdom,U.K. 50Y,ok,5885,2005-05-19,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_50y.csv,data/investpy_bond_yields/united_kingdom/u_k_50y_request_log.csv
+united kingdom,U.K. 5Y,ok,7389,2000-01-01,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_5y.csv,data/investpy_bond_yields/united_kingdom/u_k_5y_request_log.csv
+united kingdom,U.K. 6M,ok,5342,2002-06-24,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_6m.csv,data/investpy_bond_yields/united_kingdom/u_k_6m_request_log.csv
+united kingdom,U.K. 6Y,ok,7255,2000-01-03,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_6y.csv,data/investpy_bond_yields/united_kingdom/u_k_6y_request_log.csv
+united kingdom,U.K. 7Y,ok,7165,2000-01-03,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_7y.csv,data/investpy_bond_yields/united_kingdom/u_k_7y_request_log.csv
+united kingdom,U.K. 8Y,ok,7353,2000-01-03,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_8y.csv,data/investpy_bond_yields/united_kingdom/u_k_8y_request_log.csv
+united kingdom,U.K. 9Y,ok,6958,2000-01-03,2026-03-18,data/investpy_bond_yields/united_kingdom/u_k_9y.csv,data/investpy_bond_yields/united_kingdom/u_k_9y_request_log.csv
+united states,U.S. 10Y,ok,6769,2000-01-03,2026-03-19,data/investpy_bond_yields/united_states/u_s_10y.csv,data/investpy_bond_yields/united_states/u_s_10y_request_log.csv
+united states,U.S. 1M,ok,6245,2001-12-27,2026-03-19,data/investpy_bond_yields/united_states/u_s_1m.csv,data/investpy_bond_yields/united_states/u_s_1m_request_log.csv
+united states,U.S. 1Y,ok,4659,2008-06-05,2026-03-19,data/investpy_bond_yields/united_states/u_s_1y.csv,data/investpy_bond_yields/united_states/u_s_1y_request_log.csv
+united states,U.S. 2Y,ok,7071,2000-01-03,2026-03-19,data/investpy_bond_yields/united_states/u_s_2y.csv,data/investpy_bond_yields/united_states/u_s_2y_request_log.csv
+united states,U.S. 30Y,ok,6784,2000-01-03,2026-03-19,data/investpy_bond_yields/united_states/u_s_30y.csv,data/investpy_bond_yields/united_states/u_s_30y_request_log.csv
+united states,U.S. 3M,ok,6782,2000-01-03,2026-03-18,data/investpy_bond_yields/united_states/u_s_3m.csv,data/investpy_bond_yields/united_states/u_s_3m_request_log.csv
+united states,U.S. 3Y,ok,6012,2003-05-06,2026-03-19,data/investpy_bond_yields/united_states/u_s_3y.csv,data/investpy_bond_yields/united_states/u_s_3y_request_log.csv
+united states,U.S. 5Y,ok,6948,2000-01-03,2026-03-19,data/investpy_bond_yields/united_states/u_s_5y.csv,data/investpy_bond_yields/united_states/u_s_5y_request_log.csv
+united states,U.S. 6M,ok,6731,2000-01-03,2026-03-19,data/investpy_bond_yields/united_states/u_s_6m.csv,data/investpy_bond_yields/united_states/u_s_6m_request_log.csv
+united states,U.S. 7Y,ok,4467,2009-03-12,2026-03-19,data/investpy_bond_yields/united_states/u_s_7y.csv,data/investpy_bond_yields/united_states/u_s_7y_request_log.csv

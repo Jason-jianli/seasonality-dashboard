@@ -27,3 +27,4 @@ norway,Norway 3M,2024,failed,0,01/01/2024,31/12/2024,Failed to download Norway 3
 norway,Norway 3M,2025,failed,0,01/01/2025,31/12/2025,Failed to download Norway 3M from 01/01/2025 to 31/12/2025 after 60 attempts: ERR#0069: bond information unavailable or not found.,
 norway,Norway 3M,2026,failed,0,01/01/2026,11/03/2026,Failed to download Norway 3M from 01/01/2026 to 11/03/2026 after 60 attempts: ERR#0069: bond information unavailable or not found.,
 norway,Norway 3M,2026,failed,0,01/01/2026,13/03/2026,"Failed to download Norway 3M from 01/01/2026 to 13/03/2026 after 60 attempts: ERR#0015: error 403, try again later.",2026-03-13 22:56:06
+norway,Norway 3M,2026,failed,0,01/01/2026,19/03/2026,Failed to download Norway 3M from 01/01/2026 to 19/03/2026 after 60 attempts: ERR#0069: bond information unavailable or not found.,2026-03-19 10:23:32
